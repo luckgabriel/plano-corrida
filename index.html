@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Corrida + Alimentação</title>
+    <style>
+        body { font-family: sans-serif; padding: 1rem; background-color: #fefefe; }
+        .day { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1.2rem; border-radius: 8px; background-color: #fff; box-shadow: 1px 1px 4px rgba(0,0,0,0.05); }
+        .day h3 { margin-top: 0; font-size: 1.1rem; color: #333; }
+        .today { border-left: 6px solid #00bcd4; background-color: #e0f7fa; }
+        label { display: block; margin-top: 0.5rem; font-weight: bold; }
+        .section-title { margin-bottom: 0.2rem; font-weight: bold; }
+        p { margin: 0.2rem 0; }
+    </style>
+</head>
+<body>
+    <h1>Plano até a Meia Maratona</h1>
+
+    <div class="day" id="23/05/2025">
+        <h3>23/05/2025 (Friday)</h3>
+        <p><span class="section-title">Treino:</span> Treino em bloco - 8km (2km easy + 5km forte + 1km leve)</p>
+        <p><span class="section-title">Pré-Treino:</span> Banana (1/2) + 1/2 scoop de whey + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Peixe grelhado (150g), purê de batata-doce (150g), espinafre refogado (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Whey (1 scoop), castanhas (2 unid.), 1 banana</p>
+        <p><span class="section-title">Jantar:</span> Wrap integral com frango (100g), salada (1 xíc.), homus (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato após 30–40min<br>- Água conforme tolerância</p>
+        <label><input type="checkbox" onchange="saveCheck('23/05/2025 (Friday)')" id="cb_23/05/2025 (Friday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="24/05/2025">
+        <h3>24/05/2025 (Saturday)</h3>
+        <p><span class="section-title">Treino:</span> Rodagem 14km - pace 5:45</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('24/05/2025 (Saturday)')" id="cb_24/05/2025 (Saturday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="25/05/2025">
+        <h3>25/05/2025 (Sunday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('25/05/2025 (Sunday)')" id="cb_25/05/2025 (Sunday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="26/05/2025">
+        <h3>26/05/2025 (Monday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('26/05/2025 (Monday)')" id="cb_26/05/2025 (Monday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="27/05/2025">
+        <h3>27/05/2025 (Tuesday)</h3>
+        <p><span class="section-title">Treino:</span> Treino de volume - 10km - pace 6:00</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('27/05/2025 (Tuesday)')" id="cb_27/05/2025 (Tuesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="28/05/2025">
+        <h3>28/05/2025 (Wednesday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('28/05/2025 (Wednesday)')" id="cb_28/05/2025 (Wednesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="29/05/2025">
+        <h3>29/05/2025 (Thursday)</h3>
+        <p><span class="section-title">Treino:</span> Treino regenerativo - 5km - pace 6:30</p>
+        <p><span class="section-title">Pré-Treino:</span> 1 fatia de pão integral + geleia + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Ovos mexidos (3), arroz integral (3 col. sopa), legumes cozidos (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte (100g), aveia (1 col. sopa), morangos (4 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Omelete com vegetais (2 ovos), salada (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Não é necessário suplementação intra-treino</p>
+        <label><input type="checkbox" onchange="saveCheck('29/05/2025 (Thursday)')" id="cb_29/05/2025 (Thursday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="30/05/2025">
+        <h3>30/05/2025 (Friday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('30/05/2025 (Friday)')" id="cb_30/05/2025 (Friday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="31/05/2025">
+        <h3>31/05/2025 (Saturday)</h3>
+        <p><span class="section-title">Treino:</span> Rodagem 15km - pace 5:45</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('31/05/2025 (Saturday)')" id="cb_31/05/2025 (Saturday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="01/06/2025">
+        <h3>01/06/2025 (Sunday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('01/06/2025 (Sunday)')" id="cb_01/06/2025 (Sunday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="02/06/2025">
+        <h3>02/06/2025 (Monday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('02/06/2025 (Monday)')" id="cb_02/06/2025 (Monday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="03/06/2025">
+        <h3>03/06/2025 (Tuesday)</h3>
+        <p><span class="section-title">Treino:</span> Treino regenerativo - 5km - pace 6:30</p>
+        <p><span class="section-title">Pré-Treino:</span> 1 fatia de pão integral + geleia + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Ovos mexidos (3), arroz integral (3 col. sopa), legumes cozidos (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte (100g), aveia (1 col. sopa), morangos (4 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Omelete com vegetais (2 ovos), salada (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Não é necessário suplementação intra-treino</p>
+        <label><input type="checkbox" onchange="saveCheck('03/06/2025 (Tuesday)')" id="cb_03/06/2025 (Tuesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="04/06/2025">
+        <h3>04/06/2025 (Wednesday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('04/06/2025 (Wednesday)')" id="cb_04/06/2025 (Wednesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="05/06/2025">
+        <h3>05/06/2025 (Thursday)</h3>
+        <p><span class="section-title">Treino:</span> Treino em bloco - 8km (2km easy + 5km forte + 1km leve)</p>
+        <p><span class="section-title">Pré-Treino:</span> Banana (1/2) + 1/2 scoop de whey + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Peixe grelhado (150g), purê de batata-doce (150g), espinafre refogado (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Whey (1 scoop), castanhas (2 unid.), 1 banana</p>
+        <p><span class="section-title">Jantar:</span> Wrap integral com frango (100g), salada (1 xíc.), homus (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato após 30–40min<br>- Água conforme tolerância</p>
+        <label><input type="checkbox" onchange="saveCheck('05/06/2025 (Thursday)')" id="cb_05/06/2025 (Thursday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="06/06/2025">
+        <h3>06/06/2025 (Friday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('06/06/2025 (Friday)')" id="cb_06/06/2025 (Friday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="07/06/2025">
+        <h3>07/06/2025 (Saturday)</h3>
+        <p><span class="section-title">Treino:</span> Rodagem 18km - pace 5:30–5:45</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('07/06/2025 (Saturday)')" id="cb_07/06/2025 (Saturday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="08/06/2025">
+        <h3>08/06/2025 (Sunday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('08/06/2025 (Sunday)')" id="cb_08/06/2025 (Sunday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="09/06/2025">
+        <h3>09/06/2025 (Monday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('09/06/2025 (Monday)')" id="cb_09/06/2025 (Monday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="10/06/2025">
+        <h3>10/06/2025 (Tuesday)</h3>
+        <p><span class="section-title">Treino:</span> Treino regenerativo - 7km - pace 6:30</p>
+        <p><span class="section-title">Pré-Treino:</span> 1 fatia de pão integral + geleia + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Ovos mexidos (3), arroz integral (3 col. sopa), legumes cozidos (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte (100g), aveia (1 col. sopa), morangos (4 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Omelete com vegetais (2 ovos), salada (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Não é necessário suplementação intra-treino</p>
+        <label><input type="checkbox" onchange="saveCheck('10/06/2025 (Tuesday)')" id="cb_10/06/2025 (Tuesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="11/06/2025">
+        <h3>11/06/2025 (Wednesday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('11/06/2025 (Wednesday)')" id="cb_11/06/2025 (Wednesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="12/06/2025">
+        <h3>12/06/2025 (Thursday)</h3>
+        <p><span class="section-title">Treino:</span> Treino de volume - 10km - pace 5:50</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('12/06/2025 (Thursday)')" id="cb_12/06/2025 (Thursday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="13/06/2025">
+        <h3>13/06/2025 (Friday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('13/06/2025 (Friday)')" id="cb_13/06/2025 (Friday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="14/06/2025">
+        <h3>14/06/2025 (Saturday)</h3>
+        <p><span class="section-title">Treino:</span> Rodagem 14km - pace 5:30–5:45</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Frango grelhado (180g), arroz integral (4 col. sopa), legumes (1 xíc.), azeite (1 col. sopa), banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte natural (100g), granola (20g), maçã (1 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Sopa reforçada com frango (150g), legumes (1 xíc.), torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('14/06/2025 (Saturday)')" id="cb_14/06/2025 (Saturday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="15/06/2025">
+        <h3>15/06/2025 (Sunday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('15/06/2025 (Sunday)')" id="cb_15/06/2025 (Sunday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="16/06/2025">
+        <h3>16/06/2025 (Monday)</h3>
+        <p><span class="section-title">Treino:</span> Musculação</p>
+        <p><span class="section-title">Pré-Treino:</span> Café preto + 1 banana pequena + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Carne magra (150g), abóbora assada (1 xíc.), salada (1 xíc.), ovo cozido (1), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão integral (2 fatias), cottage (1 col. sopa), chá + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Ovos mexidos (2), arroz (2 col. sopa), vagem refogada (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Whey e creatina no pré ou pós já são suficientes</p>
+        <label><input type="checkbox" onchange="saveCheck('16/06/2025 (Monday)')" id="cb_16/06/2025 (Monday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="17/06/2025">
+        <h3>17/06/2025 (Tuesday)</h3>
+        <p><span class="section-title">Treino:</span> Treino regenerativo - 7km - pace 6:30</p>
+        <p><span class="section-title">Pré-Treino:</span> 1 fatia de pão integral + geleia + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Ovos mexidos (3), arroz integral (3 col. sopa), legumes cozidos (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Iogurte (100g), aveia (1 col. sopa), morangos (4 unid.) + 1 scoop de whey</p>
+        <p><span class="section-title">Jantar:</span> Omelete com vegetais (2 ovos), salada (1 xíc.), azeite (1 col. sopa)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Não é necessário suplementação intra-treino</p>
+        <label><input type="checkbox" onchange="saveCheck('17/06/2025 (Tuesday)')" id="cb_17/06/2025 (Tuesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="18/06/2025">
+        <h3>18/06/2025 (Wednesday)</h3>
+        <p><span class="section-title">Treino:</span> OFF (descanso total)</p>
+        <p><span class="section-title">Pré-Treino:</span> Chá + 1 fatia de pão integral + queijo branco (30g) + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Arroz branco (6 col. sopa), frango grelhado (150g), legumes leves cozidos (1/2 xíc.), azeite (1 col. chá), 1 banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão branco (2 fatias), geleia sem açúcar (1 col. sopa), whey (1 scoop), 1 fruta leve (kiwi ou maçã)</p>
+        <p><span class="section-title">Jantar:</span> Purê de batata (200g), peito de frango (100g), arroz (3 col. sopa), cenoura cozida (1/2 xíc.)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Manter hidratação e suplementação básica (whey + creatina)</p>
+        <label><input type="checkbox" onchange="saveCheck('18/06/2025 (Wednesday)')" id="cb_18/06/2025 (Wednesday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="19/06/2025">
+        <h3>19/06/2025 (Thursday)</h3>
+        <p><span class="section-title">Treino:</span> Treino volume - 7km - pace 6:30</p>
+        <p><span class="section-title">Pré-Treino:</span> Pão integral (2 fatias) + mel (1 col. chá) + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Arroz branco (6 col. sopa), frango grelhado (150g), legumes leves cozidos (1/2 xíc.), azeite (1 col. chá), 1 banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão branco (2 fatias), geleia sem açúcar (1 col. sopa), whey (1 scoop), 1 fruta leve (kiwi ou maçã)</p>
+        <p><span class="section-title">Jantar:</span> Purê de batata (200g), peito de frango (100g), arroz (3 col. sopa), cenoura cozida (1/2 xíc.)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Durante o treino:<br>- 1 gel de carboidrato a cada 45–50min<br>- Água a cada 20min<br>- Eletrólitos se >1h30 ou clima quente</p>
+        <label><input type="checkbox" onchange="saveCheck('19/06/2025 (Thursday)')" id="cb_19/06/2025 (Thursday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="20/06/2025">
+        <h3>20/06/2025 (Friday)</h3>
+        <p><span class="section-title">Treino:</span> OFF (descanso total)</p>
+        <p><span class="section-title">Pré-Treino:</span> Chá + 1 fatia de pão integral + queijo branco (30g) + 1 scoop de creatina</p>
+        <p><span class="section-title">Almoço:</span> Arroz branco (6 col. sopa), frango grelhado (150g), legumes leves cozidos (1/2 xíc.), azeite (1 col. chá), 1 banana</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Pão branco (2 fatias), geleia sem açúcar (1 col. sopa), whey (1 scoop), 1 fruta leve (kiwi ou maçã)</p>
+        <p><span class="section-title">Jantar:</span> Purê de batata (200g), peito de frango (100g), arroz (3 col. sopa), cenoura cozida (1/2 xíc.)</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Manter hidratação e suplementação básica (whey + creatina)</p>
+        <label><input type="checkbox" onchange="saveCheck('20/06/2025 (Friday)')" id="cb_20/06/2025 (Friday)"> Marcar como concluído</label>
+    </div>
+    
+    <div class="day" id="21/06/2025">
+        <h3>21/06/2025 (Saturday)</h3>
+        <p><span class="section-title">Treino:</span> PROVA 21KM</p>
+        <p><span class="section-title">Pré-Treino:</span> 2 fatias de pão integral + 1 colher de mel + banana + café + whey (1/2 scoop) + creatina (1 scoop)</p>
+        <p><span class="section-title">Almoço:</span> Arroz branco (3 col. sopa), frango grelhado (150g), legumes leves (1 xíc.), azeite (1 col. chá)</p>
+        <p><span class="section-title">Lanche da Tarde:</span> Whey (1 scoop), castanhas (2 unid.), água</p>
+        <p><span class="section-title">Jantar:</span> Sopa de legumes (250ml), ovo cozido (1 unid.), 1 torrada integral</p>
+        <p><span class="section-title">Suplementação Intra-treino:</span><br>Antes da largada (19h): Pão branco + mel + banana + água + whey com creatina<br>Durante a prova:<br>- Gel 1 aos 6–7km (~30min)<br>- Gel 2 aos 13–14km (~1h10)<br>- Eletrólito (1 cápsula) no km 10<br>- Gel 3 opcional no km 18<br>- Água a cada 20–30min</p>
+        <label><input type="checkbox" onchange="saveCheck('21/06/2025 (Saturday)')" id="cb_21/06/2025 (Saturday)"> Marcar como concluído</label>
+    </div>
+    
+<script>
+    const today = new Date().toLocaleDateString('pt-BR');
+    const allDays = document.querySelectorAll(".day");
+    allDays.forEach(el => {
+        if (el.id.includes(today.substring(0, 5))) {
+            el.classList.add("today");
+        }
+    });
+
+    function saveCheck(date) {
+        const checked = document.getElementById("cb_" + date).checked;
+        localStorage.setItem("check_" + date, checked);
+    }
+
+    function loadChecks() {
+        const all = document.querySelectorAll("input[type='checkbox']");
+        all.forEach(cb => {
+            const id = cb.id.replace("cb_", "");
+            cb.checked = localStorage.getItem("check_" + id) === "true";
+        });
+    }
+    loadChecks();
+</script>
+</body>
+</html>
